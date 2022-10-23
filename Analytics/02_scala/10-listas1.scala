@@ -18,16 +18,32 @@ def main(args: Array[String]) = {
 
    //Recendo qualquer tipo de dado:
    val mix: List[Any] = List(1, "banana", 2.0);
+   
 
    frutas.foreach(println);
+
+   println(" ");
    //alter maçã to maca
    frutas = frutas.updated(1, "maca");
+
+   println(" ");
+
+   frutas.foreach(println)
    
-   frutas.foreach(println);
-
-
+   
+   println("Tamanho da lista: " + frutas.size);
+   println("Tamanho da lista: " + frutas.length);
+   println("Primeiro elemento da lista: " + frutas.head);
+   println("Último elemento da lista: " + frutas.last);
+   println("Lista sem o primeiro elemento: " + frutas.tail);
+   println("Lista sem o último elemento: " + frutas.init);
+   println("Verifica se a lista está vazia: " + frutas.isEmpty);
+   println("Verifica se a lista não está vazia: " + frutas.nonEmpty);
+   println("Verifica se a lista contém a string banana: " + frutas.contains("banana"));
+   println("Pega o elemento da lista na posição 1: " + frutas.apply(1));
+   println("Pega o elemento da lista na posição 1: " + frutas(1));
 
    
-
-
-}
+   
+   
+   }

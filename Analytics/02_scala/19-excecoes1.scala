@@ -13,7 +13,7 @@ def main(args: Array[String]) = {
       } catch {
          
          case ex: FileNotFoundException => {
-            println("Arquivo não encontrado")
+            println("Arquivo nao encontrado")
          }
          
          case ex: IOException => {

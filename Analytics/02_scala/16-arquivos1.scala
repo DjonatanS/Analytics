@@ -14,10 +14,11 @@ def main(args: Array[String]) = {
    val print_Writer = new PrintWriter(arquivo) 
   
    // Gravando dados no arquivo    
-   print_Writer.write("Scala, Python, R, Go, Java") 
+   print_Writer.write("Realizando a gravação de dados no arquivo com Scala") 
   
    // Fecha o objeto 
    print_Writer.close()   
+
 
 
 }
